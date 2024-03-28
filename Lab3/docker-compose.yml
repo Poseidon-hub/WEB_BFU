@@ -8,6 +8,7 @@ services:
       - ./task1:/task1
       - ./task2/task2b:/task2b
       - ./task2/task2a:/task2a
+      - ./task2/task2c:/task2c
       - ./site.conf:/etc/nginx/conf.d/site.conf
     links:
       - php
@@ -17,4 +18,5 @@ services:
       - ./task1:/task1
       - ./task2/task2b:/task2b
       - ./task2/task2a:/task2a
+      - ./task2/task2c:/task2c
 
