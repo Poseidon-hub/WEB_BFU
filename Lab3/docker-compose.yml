@@ -6,6 +6,7 @@ services:
       - "8080:80"
     volumes:
       - ./task1:/task1
+      - ./task2/task2a:/task2a
       - ./site.conf:/etc/nginx/conf.d/site.conf
     links:
       - php
@@ -13,3 +14,5 @@ services:
     image: php:8.3-fpm
     volumes:
       - ./task1:/task1
+      - ./task2/task2a:/task2a
+
